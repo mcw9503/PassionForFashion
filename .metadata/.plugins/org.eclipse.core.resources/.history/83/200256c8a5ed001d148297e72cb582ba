@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<style>
+
+.reviewComment {
+	display: inline-block;
+	background: rgb(218, 218, 218);
+	border-radius: 8px;
+	padding: 3px;
+	color: black;
+	margin-left: 5px;
+}
+</style>
+
+<div class="reviewWrap"
+		style="margin-left: 110px; margin-right: 110px; margin-top: 5px; margin-bottom: 15px;">
+		<h3 style="display: inline-block; font-size: 25px; font-weight: 200;">review</h3>
+		( <span>1</span> )
+		<span style="margin-left: 20px; font-weight: 200;"> more &rang;&rang;</span>
+		<div class="textbox" style="border: 1px solid lightgray; padding: 15px;">
+			<div>
+				<div class="nickName"
+					style="font-size: 18px; margin-top: 10px; margin-bottom: 10px; display: inline-block; font-weight: 400;">user***</div>
+				<span style="float: right; font-size: 20px; font-weight: 200;">2023-05-05</span>
+			</div>
+			<img src="img/review.jpg" alt=""
+				style="width: 170px; height: 190px; display: inline-block; float: left; margin-bottom: 15px" />
+
+			<div style="display: inline-block; width: 100%; margin-bottom: 30px;">
+				<span class="reviewComment" style="font-weight: 400;">사이즈 보통이에요</span> 
+				<span class="reviewComment" style="font-weight: 400;">색상 밝아요</span> 
+				<span class="reviewComment" style="font-weight: 400;">두께 얇아요</span>
+
+				<p style="margin-left: 5px; margin-top: 10px; font-weight: 200;">지난해 색상 별로 3가지 다
+					구매해서 정말 활용도 있게 착용한 제품이라 두벌재 구매합니다. 색상 핏 머두 너무 맘에 듭니다. 지난해 색상 별로 3가지
+					다 구매해서 정말 활용도 있게 착용한 제품이라 두벌재 구매합니다. 색상 핏 머두 너무 맘에 듭니다. 착용한 제품이라
+					두벌재 구매합니다. 색상 핏 머두 너무 맘에 듭니다. 지난해 색상 별로 3가지 다 구매해서 정말 활용도 있게 착용한
+					제품이라 두벌재 구매합니다. 색상 핏 머두 너무 맘에 듭니다 착용한 제품이라 두벌재 구매합니다. 색상 핏 머두 너무 맘에
+					듭니다.</p>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

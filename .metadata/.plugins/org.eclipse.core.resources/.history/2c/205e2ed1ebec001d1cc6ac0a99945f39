@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css"
+	rel="stylesheet">
+</head>
+
+<style>
+
+* {
+	outline: none;
+	margin: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+input[id*="answer"] + label h3 {
+	position: absolute;
+	top: 50%;
+	right:10px;
+	width:80px;
+	height:30px;
+	margin-top: -15px;
+	border-top: none:
+	background: white;
+	font-weight: 200;
+}
+
+
+.annNum {
+font-weight: 500;
+}
+
+hr{
+border-bottom: 1px solid black;
+}
+div button {
+	color: dimgray;
+	background:white;
+	border: 1px solid lightgray;
+	margin-bottom: 10px;
+	width: 70px;
+}
+
+div button:active{
+	color: black;
+	background:white;
+	border: 0.5px solid black;
+}
+
+div form input {
+	color: dimgray;
+	background:white;
+	border: 1px solid lightgray;
+	margin-bottom: 10px;
+	width: 70px;
+}
+
+div form input:active {
+	color: black;
+	background:white;
+	border: 0.5px solid black;
+}
+
+
+
+thead th {
+ text-align: center;
+ justify-content: space-between;
+ border-bottom: 1px solid lightgray;
+}
+
+tbody td {
+ text-align: center;
+ justify-content: space-between;
+ height: 60px;
+ border-bottom: 1px solid lightgray;
+ 
+}
+
+tbody td span:last-child {
+border: none;
+}
+
+
+tbody td span {
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	color:white;
+	background: black;
+}
+
+table {
+	width: 100%;
+	text-align: center;
+	border: 1px solid black;
+}
+
+#Paging{
+ margin: auto;
+ width: 100%;
+ height: 50px;
+ 
+}
+
+#Paging div{
+ display :inline-block;
+ width: 30px;
+ margin: auto;
+ text-align: center;
+}
+
+</style>
+<body>
+	<div style="display:inline-block; margin-left: 500px; margin-bottom: 100px; margin-top: 50px; font-size: 20px;">&lang; &lang; 고객관리 </div>
+	<span style="font-size: 20px;">|</span>
+	 <span style="color:dimgray;font-size: 20px;">  공지사항</span>
+	
+	<div class="annWrap" style="width: 1600px; margin: auto;" >
+		
+		<h3 style="font-weight: 400; margin-bottom: 30px; border-bottom: 2px solid black; height: 40px;"> 1대1문의</h3>
+		<div style="margin-top: 50px;">
+			<form>
+				<button type="button">1주일</button>
+				<button type="button">1개월</button>
+				<button type="button">3개월</button>
+				<button type="button" name="date">전체시기</button>
+				<input type="date" name="date" style="width:  150px; margin-left: 100px; margin-right: 50px;">
+				<input type="submit" name="submit" value="조회">
+			</form>
+		</div>
+
+	<table>
+		<thead style="text-align: center;">
+			<tr>
+				<th>문의 유형</th>
+				<th>내용</th>
+				<th>주문번호</th>
+				<th>작성일</th>
+				<th>처리상태</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr>
+				<td>교환/취소(반품)-교환/반품</td>
+				<td>불량입니다.환불해주세요 빨리 해주세요 급해서 그래요</td>
+				<td>202152153581</td>
+				<td>2023-05-04 23:15:04</td>
+				<td><span>답변완료</span></td>
+			</tr>
+			<tr>
+				<td>교환/취소(반품)-교환/반품</td>
+				<td>불량입니다.환불해주세요 빨리 해주세요 급해서 그래요</td>
+				<td>202152153581</td>
+				<td>2023-05-04 23:15:04</td>
+				<td><span>답변완료</span></td>
+			</tr>
+			<tr>
+				<td>교환/취소(반품)-교환/반품</td>
+				<td>불량입니다.환불해주세요 빨리 해주세요 급해서 그래요</td>
+				<td>202152153581</td>
+				<td>2023-05-04 23:15:04</td>
+				<td><span>답변완료</span></td>
+			</tr>
+			<tr>
+				<td>교환/취소(반품)-교환/반품</td>
+				<td>불량입니다.환불해주세요 빨리 해주세요 급해서 그래요</td>
+				<td>202152153581</td>
+				<td>2023-05-04 23:15:04</td>
+				<td><span>답변완료</span></td>
+			</tr>
+			<tr>
+				<td>교환/취소(반품)-교환/반품</td>
+				<td>불량입니다.환불해주세요 빨리 해주세요 급해서 그래요</td>
+				<td>202152153581</td>
+				<td>2023-05-04 23:15:04</td>
+				<td><span>답변완료</span></td>
+			</tr>
+			<tr>
+				<td>교환/취소(반품)-교환/반품</td>
+				<td>불량입니다.환불해주세요 빨리 해주세요 급해서 그래요</td>
+				<td>202152153581</td>
+				<td>2023-05-04 23:15:04</td>
+				<td><span>답변완료</span></td>
+			</tr>
+		</tbody>	
+			
+	</table>	
+                <div id="Paging">
+	                    <div class="prev">◀</div>
+	                    <div>1</div>
+	                    <div>2</div>
+	                    <div>3</div>
+	                    <div>4</div>
+	                    <div>5</div>
+	                    <div class="next">▶</div>
+                </div>
+	</div>		
+</body>
+</html>

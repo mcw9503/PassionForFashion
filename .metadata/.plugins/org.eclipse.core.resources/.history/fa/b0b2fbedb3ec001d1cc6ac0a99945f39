@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css"
+	rel="stylesheet">
+</head>
+
+<style>
+
+* {
+	outline: none;
+	margin: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+input[id*="answer"] {
+	display: none;
+}
+
+input[id*="answer"] + label {
+	display:block;
+	padding:20px;
+	border:1px solid black;
+	border-top:2px solid black;
+	border-bottom: 1px solid lightgray;
+	color:black;
+	font-weight:200;
+	background: white;
+	position: relative;
+}
+
+
+input[id*="answer"] + label h3 {
+	position: absolute;
+	top: 50%;
+	right:10px;
+	width:80px;
+	height:30px;
+	margin-top: -15px;
+	border-top: none:
+	background: white;
+	font-weight: 200;
+}
+
+input[id*="answer"] + label span {
+	position: absolute;
+	top: 30%;
+	right:200px;
+}
+
+
+
+input[id*="answer"] + label + div {
+	max-height: 0;
+	transition: all .35s;
+	overflow: hidden;
+	background: white;
+	font-size: 11px;
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+}
+
+input[id*="answer"] + label + div:last-child{
+	border-bottom : 1px solid black;
+}
+
+input[id*="answer"] + label + div p {
+	display:inline-block;
+	padding:20px;
+}
+
+input[id*="answer"]:checked + label + div {
+	max-height: 500px;
+}
+.qnaCategoy {
+font-weight: 500;
+}
+hr{
+border-bottom: 1px solid black;
+}
+div button {
+	color: dimgray;
+	background:white;
+	border: 1px solid lightgray;
+	margin-bottom: 10px;
+	width: 70px;
+}
+
+div button:active{
+	color: black;
+	background:white;
+	border: 0.5px solid black;
+}
+
+div form input {
+	color: dimgray;
+	background:white;
+	border: 1px solid lightgray;
+	margin-bottom: 10px;
+	width: 70px;
+}
+
+div form input:active {
+	color: black;
+	background:white;
+	border: 0.5px solid black;
+}
+
+
+
+</style>
+<body>
+	<div style="display:inline-block; margin-left: 500px; margin-bottom: 100px; margin-top: 50px;">&lang; &lang; 고객관리 <span>|</span> <span style="color:dimgray;">  1대1 문의 목록</span>
+	</div>
+	<div class="qnaWrap" style="width: 1200px; margin: auto;" >
+		
+		<h3 style="font-weight: 400; margin-bottom: 30px; border-bottom: 2px solid black; height: 40px;"> 1대1문의</h3>
+		<div style="margin-top: 50px;">
+			<form>
+				<button type="button">1주일</button>
+				<button type="button">1개월</button>
+				<button type="button">3개월</button>
+				<button type="button" name="date">전체시기</button>
+				<input type="date" name="date" style="width:  150px; margin-left: 100px; margin-right: 50px;">
+				<input type="submit" name="submit" value="조회">
+			</form>
+		</div>
+		
+		<hr style="margin-bottom: 10px; font-weight: 800; color:black;">
+		
+		<div style="display: inline-block; text-align: center; width: 100px; height: 40px;">
+			<p>문의 유형</p>
+		</div>
+		<div style="display: inline-block; text-align: center; width: 690px; height: 40px;">
+			<p> 제목 </p>
+		</div>
+		<div style="display: inline-block; text-align: center; width: 60px; height: 40px;">
+			<p> 주문번호 </p>
+		</div>
+		<div style="display: inline-block; text-align: center; width: 100px; height: 40px; margin-right: 85px;">
+			<p> 작성일 </p> 
+		</div>
+		<div style="display: inline-block; text-align: center; width: 90px; height: 40px; ">
+			<p> 처리상태 </p> 
+		</div>
+		
+		<input type="checkbox" id="answer01">
+		<label for="answer01"> 
+		<div class="qnaCategoy" style="display: inline-block; width: 100px;">환불 관련</div> 
+		&nbsp;&nbsp; 
+		환불 관련 문의입니다.
+		<span style="margin-right: 150px;">No.00012355</span>
+		<span>2023-05-04</span>
+		<h3 class="ansComplete"style="margin-left: 15px; ">답변하기</h3></label>
+		<div>
+			<p class="qnaAnswer"></p>
+		</div>
+		
+		<input type="checkbox" id="answer02">
+		<label for="answer02"> 
+		<div class="qnaCategoy" style="display: inline-block; width: 100px;">환불 관련</div>
+		&nbsp;&nbsp; 
+		환불 관련 문의입니다.
+		<span style="margin-right: 150px;">No.00012355</span>
+		<span>2023-05-04</span>
+		<h3 class="ansComplete" style="margin-left: 15px;"></h3></label>
+		<div>
+			<p class="qnaAnswer">답변완료 해드렸습니다.</p>
+		</div>
+		
+		<input type="checkbox" id="answer03">
+		<label for="answer03"> 
+		<div class="qnaCategoy" style="display: inline-block; width: 100px;">환불 관련</div>
+		&nbsp;&nbsp; 
+		환불 관련 문의입니다.
+		<span style="margin-right: 150px;">No.00012355</span>
+		<span>2023-05-04</span><h3 class="ansComplete" style="margin-left: 15px;">답변하기</h3></label>
+		<div>
+			<p class="qnaAnswer">답변완료 해드렸습니다. 다른 문의는 더 필요 없으신가요.
+			저희 쇼핑몰을 이용해주셔서 감사드립니다. 좋은 하루 보내세요.</p>
+		</div>
+		
+		<input type="checkbox" id="answer04">
+		<label for="answer04">
+		<div class="qnaCategoy" style="display: inline-block; width: 100px;">환불 관련</div>
+		&nbsp;&nbsp;
+		환불 관련 문의입니다.
+		<span style="margin-right: 150px;">No.00012355</span>
+		<span>2023-05-04</span><h3  class="ansComplete" style="margin-left: 15px;">답변하기</h3></label>
+		<div>
+			<p class="qnaAnswer">답변완료 해드렸습니다. 다른 문의는 더 필요 없으신가요.
+			저희 쇼핑몰을 이용해주셔서 감사드립니다. 좋은 하루 보내세요.</p>
+		</div>
+		
+		<div class="pageNum" style="margin-top: 100px; text-align: center;">1</div>
+		
+	</div>
+	
+	
+	
+	<script>
+	window.onload = function(){
+	const qnaAnswer = document.querySelectorAll(".qnaAnswer");
+	const ansComplete = document.querySelectorAll(".ansComplete");
+			
+		
+		for(i=0; i<qnaAnswer.length; i++){
+			if(qnaAnswer[i].innerText == ""){
+				ansComplete[i].innerText="답변하기";
+			}else{
+				ansComplete[i].innerText = "수정하기";
+			}
+			
+		}
+		
+		
+	
+	}
+	
+	</script>
+
+</body>
+</html>
